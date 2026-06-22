@@ -1,0 +1,19 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "svelte": {
+      "type": "local",
+      "command": ["npx", "-y", "@sveltejs/mcp"]
+    }
+  },
+  "references": {
+    "api": {
+      "path": "./template-api",
+      "description": "Go backend (Huma + sqlc + Postgres). Source of the OpenAPI contract the frontend consumes."
+    },
+    "app": {
+      "path": "./template-app",
+      "description": "SvelteKit frontend (Cloudflare Pages). Generates its typed API client from the backend OpenAPI spec."
+    }
+  }
+}

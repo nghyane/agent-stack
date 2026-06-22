@@ -1,0 +1,14 @@
+# Binaries
+/bin/
+/tmp/
+
+# Env
+.env
+.env.local
+
+# Generated (regenerate via `make openapi`)
+openapi.yaml
+openapi.json
+
+# OS
+.DS_Store

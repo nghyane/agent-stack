@@ -1,0 +1,6 @@
+# Production: replace with your real domain.
+# Caddy fetches and renews TLS certificates automatically.
+# For local development, use docker compose + make dev (Caddy is production-only).
+your-domain.com {
+	reverse_proxy api:8080
+}
